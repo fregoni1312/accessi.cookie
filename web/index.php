@@ -13,7 +13,7 @@
     else
     {
         $cookie = $_COOKIE['count'];
-        $cookie++;
+        $cookie=$cookie+1;
         setcookie("count", $cookie);
         echo "Hai visitato questa pagina $cookie volte."; 
     }  
