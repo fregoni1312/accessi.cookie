@@ -1,17 +1,16 @@
 <html> 
     <head> 
-        <title>Count Page Access</title> 
+        <title>Cobntatore accessi</title> 
    </head> 
   <body> 
 <?php 
-
     if (!isset($_COOKIE['count']))
     {
         ?> 
-Welcome! This is the first time you have viewed this page. 
+Benvenuto! Questa e' la prima volta che accedi a questo sito!
 <?php 
         $cookie = 1;
-        setcookie("count", $cookie);
+        setcookie("count", $cookie,time()+60*60*24*7);
     }
     else
     {
@@ -19,7 +18,7 @@ Welcome! This is the first time you have viewed this page.
         setcookie("count", $cookie);
         ?> 
 You have viewed this page <?= $_COOKIE['count'] ?> times. 
-<?php  }// end else  ?> 
+<?php  }  ?> 
    </body> 
 </html>
 
