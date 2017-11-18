@@ -12,9 +12,9 @@
     }
     else
     {
-        $cookie = $_COOKIE['count'];
+        $cookie = $_COOKIE['count']++;
         echo "cookie prima dell'incremento $cookie, ";
-        $cookie++;
+        //$cookie++;
         echo "Hai visitato questa pagina $cookie volte."; 
         setcookie("count", $cookie);
     }  
