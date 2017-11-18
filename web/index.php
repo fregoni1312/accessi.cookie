@@ -17,9 +17,9 @@
         $cookie = $_COOKIE['count']++;
         setcookie("count", $cookie);
     
-You have viewed this page <?= $_COOKIE['count'] ?> times. 
-
-}  ?> 
+      echo "You have viewed this page <?= $_COOKIE['count'] ?> times."; 
+    }  
+      ?> 
    </body> 
 </html>
 
