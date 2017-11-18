@@ -9,7 +9,7 @@
         ?> 
 Benvenuto! Questa e' la prima volta che accedi a questo sito!
 <?php 
-        $cookie = 1;
+        $cookie = 5;
         setcookie("count", $cookie,time()+60*60*24*7);
     }
     else
