@@ -1,6 +1,8 @@
 <?php
-setcookie("MyCookie", $value, time()+7200);
-setcookie("AnotherCookie", $value, time()+7);
+echo $value;
+echo "                          ";
+setcookie("n_accessi", $value, time()+60*60*24*7);
+echo $value;
 ?>
 
 <?php
