@@ -1,6 +1,6 @@
 <html> 
     <head> 
-        <title>Cobntatore accessi</title> 
+        <title>Contatore accessi</title> 
    </head> 
   <body> 
 <?php 
