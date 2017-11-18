@@ -12,7 +12,8 @@
     }
     else
     {
-        $cookie = $_COOKIE['count']++;
+        $cookie = $_COOKIE['count'];
+        $cookie++;
         setcookie("count", $cookie);
         echo "Hai visitato questa pagina $cookie volte."; 
     }  
