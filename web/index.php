@@ -7,7 +7,7 @@
     if (!isset($_COOKIE['count']))
     {
 
-       echo "Benvenuto! Questa e' la prima volta che accedi a questo sito!";
+      echo "Benvenuto! Questa e' la prima volta che accedi a questo sito!";
 
         $cookie = 1;
         setcookie("count", $cookie,time()+60*60*24*7);
@@ -16,7 +16,7 @@
     {
         $cookie = $_COOKIE['count']++;
         setcookie("count", $cookie);
-        //?> 
+    
 You have viewed this page <?= $_COOKIE['count'] ?> times. 
 
 }  ?> 
